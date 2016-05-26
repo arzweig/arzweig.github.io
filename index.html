@@ -1,0 +1,45 @@
+background(89, 216, 255);
+var drawFish = function(xPos, yPos, bodySize) {
+var centerX = xPos;
+var centerY = yPos;
+var bodyLength = 1.59*bodySize;
+var bodyHeight = bodySize;
+var bodyColor = color(random(0, 255), random (0, 255), random(0,255));
+var tailColor = color((0, 255), random (0, 255), random(0,255));
+
+
+noStroke();
+fill(bodyColor);
+// body
+ellipse(centerX, centerY, bodyLength, bodyHeight);
+// tail
+fill(tailColor);
+var tailWidth = bodyLength/4;
+var tailHeight = bodyHeight/2;
+triangle(centerX-bodyLength/2, centerY,
+         centerX-bodyLength/2-tailWidth, centerY-tailHeight,
+         centerX-bodyLength/2-tailWidth, centerY+tailHeight);
+// eye
+fill(33, 33, 33);
+ellipse(centerX+bodyLength/4, centerY, bodyHeight/5, bodyHeight/5);
+
+};
+
+drawFish(random(10, 400), random(10, 390), random(10, 150));
+drawFish(random(10, 400), random(10, 390), random(10, 150));
+drawFish(random(10, 400), random(10, 390), random(10, 150));
+drawFish(random(10, 400), random(10, 390), random(10, 150));
+
+var MouseClicked = function() {
+     drawFish(mouseX, mouseY, random(10, 200));
+
+};
+//makes bubbles when clicked 
+var mouseClicked = function() {
+    fill(177, 230, 230);
+    var bubbleSize= random (5, 45);
+    ellipse(mouseX, mouseY, bubbleSize, bubbleSize);
+    fill(252, 252, 252);
+    rect(mouseX+bubbleSize/10, mouseY-bubbleSize/5, bubbleSize/10, bubbleSize/5);
+
+};
