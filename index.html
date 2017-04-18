@@ -2,97 +2,69 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Found Things</title>
+<title>From A to Z</title>
 <link href="CSS/reset.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 <style type="text/css">
+body{
+	background-color: white;
+	font-family: 'Open Sans', san-serif;
+}
+
+#blackbar{
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+}
 #container {
-	background-color: #D98;
 	width: 800px;
+	height: 800px;
 	margin-right: auto;
 	margin-left: auto;
-	background-image: none;
+	background-color: white;
+	line-height: 25px;
 }
-#img{
-	margin-right: auto;
+#navbar{
+	float: left;
+	position: relative;
+	width: 100%;
+	background: rgba(255,255,255,0.75);
+	display: flex;
+	justify-content: center;
+	height: 50px;
 	margin-left: auto;
-
+	margin-right: auto;
+	z-index: 101;
+	
 }
-
-body {
-	background-color: #C33;
-}
-#navbar {
-	background-color: #003;
-	height: 60px;
-	width: 95.1%;
-	border: 10px outset #99F;
-	margin: 5px;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	padding-left: 0px;
-	color: #FFF;
+#container #navbar ul li{
+	float: left;
+	list-style-type: none;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
 }
 a:link {
-	color: #FFF;
+	color: #000;
 	text-decoration: none;
 }
 a:visited {
 	text-decoration: none;
 }
 a:hover {
-	text-decoration: underline;
-	background-color:#CC9900;
+	text-decoration: none;
+	color: #39F;
 	border-radius: 10%;
 }
 a:active {
 	text-decoration: none;
 }
-#container #navbar ul li {
-	float: left;
-	padding: 20px;
-	list-style-type: none;
-	margin-top: 0px;
-	margin-right: 10px;
-	margin-bottom: 0px;
-	margin-left: 10px;
-}
-#container #title {
-	padding: 10px;
-	height: 20px;
-	width: 97.5%;
-	background-image: none;
-}
-h1,h2,h3,h4,h5,h6 {
-	font-family: Arial, Helvetica, sans-serif;
-}
-h1 {
-	font-size: 150%;
-	color: #000;
-	text-align: center;
-}
 
-#container #textarea {
-	width: 350px;
-	height: 400px;
-	float: left;
-	margin: 10px;
-	border: 10px inset #99F;
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	padding: 10px;
-	text-align: justify;
-}
-#container #imagearea {
-	float: right;
-	width: 400 px;
-	margin: 10px;
-	height: 500px;
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-}
 #container #footer {
 	height: 50px;
 	width: 98%;
@@ -100,49 +72,73 @@ h1 {
 	margin: 10px;
 	text-align: center;
 	font-size: 14px;
-	padding: 0px;
+	padding: 10px;
 }
-#blackbar {
-	height: 100px;
-	width: 100%;
-	background-color: #000;
-	background-image: url(images/yarn-texture.jpg);
-	opacity: 0.5;
+
+#logo{
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
 }
+#imagearea{
+	width: 300px;
+	float: left;
+	font-size: 12px;
+	line-height: 15px;
+	font-style: italic;
+}
+#textarea ul{
+	 font-size: 15px;
+    margin-bottom: 10px;
+}
+
 </style>
 </head>
 
-<body>  
-
-<div id= "blackbar">
+<body>
+<div id= "blackbar"> 
+<a href="index.html"> <img id = "logo" src="images/logo" alt ="From A to Z" height=100 width = auto align="absmiddle"></a>
 </div>
 
-<div id="container">
-  <div id="navbar">
-    <ul>
-      <li><a href="index.html" target="_self">Home</a></li>
-      <li><a href="playlist.html" target="_blank">Playlist</a></li>
-      <li><a href="contact.html" target="_blank">Contact</a></li>
-    </ul>
-  </div>
-  
-  <div id="title">
-    <h1>Miscellaneous</h1>
-  </div>
-  <div id = "textarea">
-  <p> Lorizzle ipsizzle dolor sizzle amet, mah nizzle adipiscing ma nizzle. Nullizzle sapien velizzle, go to hizzle volutpizzle, suscipizzle ma nizzle, sure stuff, arcu. Pellentesque ma nizzle fo shizzle. Dope ghetto. Yo mamma izzle dolor shut the shizzle up turpizzle tempizzle dizzle. Maurizzle pellentesque nibh dang turpis. Shiz izzle tortor. Pellentesque yo mamma rhoncizzle nisi. In doggy habitasse izzle dictumst. Crackalackin dapibizzle. Boofron tellizzle urna, pretium eu, mattizzle brizzle, eleifend vitae, nunc. Doggy suscipizzle. Integer uhuh ... yih! velit funky fresh crunk. </p>
-  </div>
+<div id = "container"> 
+	<div id = "navbar">
+        <ul>
+      <li><a href="index.html" target="_parent">home</a></li>
+      <li><a href="about.html" target="_self">about</a></li>
+      <li><a href="eco.html" target="_parent">eco</a></li>
+      <li><a href="playlist.html" target="_parent">playlist</a></li>
+     
+    	</ul>
+    </div>
 <div id = "imagearea">
-
-<p><img src= "images/things-ive-found-on-a-walk-border.jpg" width = "332"height = "227" align="middle" >
-</p>
-<p>&nbsp;</p>
-<p><img src= "images/magnifying-glass-edited.png" width = 330 height="246"></p>
+	<img src="images/IMG_9162.JPG" width= 100% id = "Ariel">
+	Ariel at LensCrafters in a quaint little mall in East Brunswick, NJ.
+    <img src="images/IMG_7754.jpg" width=100% alt="Ariel in Asbury Park">
+    Ms. Zweig stands in the Convention Hall on the Asbury Park boardwalk. 
 </div>
+<div id = "textarea">
+<h1>ABOUT ARIEL</h1>
+<p>Ariel Zweig is a current high school senior and not-soon-enough-to-be high school graduate. A proud East Brunswickian since the age of 3, Ariel is ready to leave for a considerable amount of time, though she is a firm believer in the assertion that (sometimes) <a href="http://newjerseyisntboring.com/"> NJ Isn't Boring</a>. At this very moment there is a 95% chance she is either listening to music, eating, sleeping, or breathing. Nothing gives her a thrill like the sense of discovery, roaming through quaint towns filled with <a href="https://shopmodernlove.com/">cute stores</a>, and tom ka gai soup. She can be found in her lavender-walled room reading the New Yorker, listening to 90.3 The Core at a moderate decibel level, and procrastinating anything and everything. </p>
+<p>Ms. Zweig hopes to attend any university, host her own radio show, be a writer for the New Yorker, and live on a farm. After retirement, she plans on opening a store that sells paper goods, yarn, plants, and ice cream. 
+</p>
+
+<h1>FUN FACTS</h1>
+<p>Ariel is...
+		<ul>
+	<li>the opposite of a morning person</li>
+	<li>sometimes referred to as "legs" or "Larry"</li>
+	<li>an avid doodler</li>
+	<li>a lover of giraffes</li>
+
+</p>
+</div>
+
+
 
 <div id= "footer">
-  <p>© Ariel Zweig 2017  •  arzweig@ebnet.org</p>
+  <p>© Ariel Zweig 2017  •  arzweig@ebnet.org  •  Period 10/11</p>
 </div>
+
 </div>
 <!--div above closes the container-->
 </body>
