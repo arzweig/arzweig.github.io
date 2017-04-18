@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>From A to Z</title>
+<link href="CSS/reset.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<style type="text/css">
+body{
+	background-color: white;
+	font-family: 'Open Sans', san-serif;
+}
+
+#blackbar{
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+}
+#container {
+	width: 800px;
+	height: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: white;
+	line-height: 25px;
+}
+#navbar{
+	float: left;
+	position: relative;
+	width: 100%;
+	background: rgba(255,255,255,0.75);
+	display: flex;
+	justify-content: center;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 101;
+	
+}
+#container #navbar ul li{
+	float: left;
+	list-style-type: none;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+a:link {
+	color: #000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #39F;
+	border-radius: 10%;
+}
+a:active {
+	text-decoration: none;
+	color: #F30;
+}
+
+#container #footer {
+	height: 50px;
+	width: 98%;
+	clear: both;
+	margin: 10px;
+	text-align: center;
+	font-size: 14px;
+	padding: 10px;
+}
+
+#logo{
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#imagearea{
+	width: 100%;
+	padding-top: 80px;
+}
+#textarea{
+	float: right;
+	width: 400px;
+	padding-left: 50px;
+	padding-right: 50px;
+	line-spacing: 1.5;
+}
+</style>
+</head>
+
+<body>
+<div id= "blackbar"> 
+<a href="index.html"> <img id = "logo" src="images/logo" alt ="From A to Z" height=100 width = auto align="absmiddle"></a>
+</div>
+
+<div id = "container"> 
+	<div id = "navbar">
+        <ul>
+       <li><a href="index.html" target="_parent">home</a></li>
+      <li><a href="about.html" target="_parent">about</a></li>
+      <li><a href="eco.html" target="_self">eco</a></li>
+      <li><a href="playlist.html" target="_parent">playlist</a></li>
+     
+    	</ul>
+    </div>
+
+<img src="images/IMG_8396.jpg" width = 300px alt = "Me biking with cows">
+<div id = "textarea">
+<h1>THE GREAT OUTDOORS</h1>
+<p>Ms. Zweig is a lover of the outdoors. Some of her hobbies include hiking, biking, and taking long walks through hunting territory when it may or may not still be hunting season. She also enjoys photographing nature. </p>
+<p>As a lover of nature, Ms. Zweig would like to preserve it. She aspires to one day grow all her own food, tend a few beehives, and revolutionize the agriculture industry by making it more sustainable. Agriculture is currently one of the biggest polluters and contributes significantly to greenhouse gas emissions, and she would like to reduce that impact. 
+</p>
+<p>&nbsp;</p>
+
+<h1>ARTICLES OF INTEREST</h1>
+<p><a href = "http://www.newyorker.com/magazine/2017/01/09/the-vertical-farm" target="_blank"> Vertical Farming in New Jersey </a>  
+</p>
+<p><a href = "http://www.newyorker.com/magazine/2016/11/14/death-valley-is-alive" target="_blank"> Death Valley in Bloom </a>  
+</p>
+<p><a href = "http://www.globalresearch.ca/death-and-extinction-of-the-bees/5375684" target="_blank"> The Bees are Dying </a>  
+</p>
+</div>
+
+
+
+<div id= "footer">
+  <p>© Ariel Zweig 2017  •  arzweig@ebnet.org  •  Period 10/11</p>
+</div>
+
+</div>
+<!--div above closes the container-->
+</body>
+</html>
